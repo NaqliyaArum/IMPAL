@@ -1,0 +1,43 @@
+create table mahasiswa (
+nama varchar(20) not null,
+username varchar(10) not null,
+pass varchar(6) not null,
+nim number(10) not null,
+constraint mahasiswa_pk primary key (nim) enable
+); 
+
+create table jadwal (
+mata_kuliah varchar(15) not null,
+jam date not null,
+hari varchar(7) not null,
+kode_mk varchar(6) not null,
+constraint jadwal_pk primary key (kode_mk) enable
+);
+
+create table login (
+username varchar(10) not null,
+pass varchar(6) not null,
+constraint login_pk primary key (username) enable
+);
+
+create table adm (
+username varchar(10) not null,
+pass varchar(6) not null,
+constraint adm_pk primary key (username) enable
+);
+
+insert into mahasiswa values ('agnes','agnesia','agnes',123456789);
+
+insert into login values ('aa','agrt');
+
+insert into jadwal values ('impal',19-09-13,'senin','11');
+
+insert into adm values ('bb','asdf');
+
+select * from mahasiswa;
+
+select * from login;
+
+select * from jadwal;
+
+select * from adm;
