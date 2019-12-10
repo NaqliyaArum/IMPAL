@@ -1,28 +1,28 @@
 create table mahasiswa (
-nama varchar(20) not null,
-username varchar(10) not null,
-pass varchar(6) not null,
+nama varchar(20),
+username varchar(10),
+pass varchar(6),
 nim number(10) not null,
 constraint mahasiswa_pk primary key (nim) enable
 ); 
 
 create table jadwal (
 mata_kuliah varchar(15) not null,
-jam date not null,
-hari varchar(7) not null,
-kode_mk varchar(6) not null,
+jam date,
+hari varchar(7),
+kode_mk varchar(6),
 constraint jadwal_pk primary key (kode_mk) enable
 );
 
 create table login (
 username varchar(10) not null,
-pass varchar(6) not null,
+pass varchar(6),
 constraint login_pk primary key (username) enable
 );
 
 create table adm (
 username varchar(10) not null,
-pass varchar(6) not null,
+pass varchar(6),
 constraint adm_pk primary key (username) enable
 );
 
